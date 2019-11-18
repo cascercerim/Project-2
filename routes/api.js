@@ -21,6 +21,7 @@ function getPets() {                                                      // dis
     let petfinder = $(this).attr("data-name");
     let queryURL = "http://api.petfinder.com/v2/animals?&api_key=" + keys + userInput + "&limit=10";
     //or "...animals?key= 
+    // or GET this way??  GET https://api.petfinder.com/v2/{CATEGORY}/{ACTION}?{parameter_1}={value_1}&{parameter_2}={value_2}
 
 
     $.ajax({                                                              //ajax call for giphy API
