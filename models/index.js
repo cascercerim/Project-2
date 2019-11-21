@@ -1,8 +1,15 @@
 "use strict";
+// Hides the keys in config.json file 
+// var env = process.env.NODE_ENV || 'development';
+// var config = require('./config')[env];
 
 var fs = require("fs");
 var path = require("path");
 var Sequelize = require("sequelize");
+// configPath = './config.json';
+// var parsed = JSON.parse(fs.readFileSync(configPath, 'UTF-8'));
+// exports.storageConfig=  parsed;
+// var express = require('express');
 var basename = path.basename(module.filename);
 var env = process.env.NODE_ENV || "development";
 var config = require(__dirname + "/../config/config.json")[env];
