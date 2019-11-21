@@ -1,4 +1,5 @@
 var db = require("../models");
+// var apiCalls = require('../public/js/api.js')
 
 module.exports = function (app) {
     // Get all examples
