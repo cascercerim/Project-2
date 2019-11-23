@@ -1,6 +1,64 @@
-/* just a filler to see that its connected */
+.carousel-inner{
+    max-width: 1300px;
+    position: relative;
+    margin: auto;
+    padding-bottom: 18
+    px;
+    }
 
-body{
-    background-color: blue;
+    img {
+        max-height: 400px;
+        max-width:500px;
+        display: block;
+        margin:  auto;
+      }
+    
+      body{
+          background: url("/Users/annemariehin/bootcamp/project-2-me/Images/board-carpentry-colors-dried-172280.jpg");
+          background-repeat: no-repeat;
+          background-size: 1600px 1800px;}
 
+ .top{
+     opacity: .5;
+     font-family: 'Calistoga', cursive;
+     
+ }
+
+ button{
+     opacity: 0.5;
+   font-family: 'Calistoga', cursive;
+ margin: auto;
+ padding-bottom: 40px;
+
+
+ }
+
+ .card-columns {
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+ }
+ h1{
+     text-align: center;
+     font-family: 'Calistoga', cursive;
+     color: whitesmoke;
+ }
+
+ p{
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    color: whitesmoke;
+    font-size: 24px;
+}
+
+
+.search{
+    font-family: 'Calistoga', cursive;
+    color: grey;  
+}
+
+.title{
+    padding-top: 40px;
 }
