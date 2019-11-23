@@ -14,10 +14,10 @@
       }
     
       body{
-          background: url("/Users/annemariehin/bootcamp/project-2-me/Images/board-carpentry-colors-dried-172280.jpg");
+          background: url(../Images/board-carpentry-colors-dried-172280.jpg);
           background-repeat: no-repeat;
           background-size: 1600px 1800px;}
-
+      
  .top{
      opacity: .5;
      font-family: 'Calistoga', cursive;
