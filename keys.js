@@ -1,7 +1,9 @@
-// console.log('this is loaded');
+console.log("Roll 'em! ");
 
-// exports.petfinder = {
-//     id: process.env.PETFINDER_ID,
-//     secret: process.env.PETFINDER_SECRET
-//   };
+exports.petfinder = {
+    apiKey: process.env.API_KEY,
+    secret: process.env.API_SECRET
+  };
+
+
 
