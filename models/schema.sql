@@ -1,5 +1,4 @@
-DROP DATABASE IF EXISTS exampledb;
-CREATE DATABASE exampledb;
-
-DROP DATABASE IF EXISTS testdb;
-CREATE DATABASE testdb;
+-- Drops the pet_db if it exists currently --
+DROP DATABASE IF EXISTS pets_db;
+-- Creates the "pets_db" database --
+CREATE DATABASE pets_db;
