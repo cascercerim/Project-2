@@ -11,7 +11,7 @@ const keys = require("./keys.js");
 let client = new petfinder.Client(keys.petfinder);
 
 // @petfinder API Call
-client.animal.search({photos: ["small"]})
+client.animal.search()
     .then(function (response) {
         // Do something with `response.data.animals`
         console.log(response.data)
