@@ -5,8 +5,8 @@ module.exports = function(sequelize, DataTypes) {
       gender: DataTypes.STRING,
       coat: DataTypes.STRING,
       age: DataTypes.STRING,
-      // description: DataTypes.STRING,
-      // photos: DataTypes.STRING,
+      description: DataTypes.STRING,
+      photos: DataTypes.STRING
     });
     return Pet;
   };

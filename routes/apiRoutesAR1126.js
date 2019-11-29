@@ -33,6 +33,7 @@ module.exports = function (app) {
                 coat: req.body.coat,
                 age: req.body.age,
                 description: req.body.description,
+                photos: req.body.photos,
             }
         )
             .then(function (response) {
@@ -52,8 +53,8 @@ module.exports = function (app) {
                     gender: response.data.animals[0].gender,
                     coat: response.data.animals[0].coat,
                     age: response.data.animals[0].age,
-                    // description: response.data.animals[0].description,
-                    // photos: response.data.animals[0].photos[0],  //if this doesn't work drill to see if you can get one pic by adding:     [0].medium,
+                    description: response.data.animals[0].description,
+                    photos: response.data.animals[0].photos[0].medium[0],  //if this doesn't work drill to see if you can get one pic by adding:     [0].medium,
 
                 }).then(function (newPet) {
                     // We have access to the new pet as an argument inside of the callback function
