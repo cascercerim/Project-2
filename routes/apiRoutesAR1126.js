@@ -5,15 +5,15 @@
 // Dependencies
 // =============================================================
 // add code to read and set any environment variables with the dotenv package
-// require("dotenv").config();
+require("dotenv").config();
 // console.log(process.env);
 
 let petfinder = require("@petfinder/petfinder-js");
-let client = new petfinder.Client({apiKey: "EGc3gxBpk6teIzgELn3yobiuQzodUCyieJnvK8zEj633m76rEz", secret: "TJgV9Um001Akix3x70lcFD1eO3gIQX7aAIBlIMUB"});
+// let client = new petfinder.Client({apiKey: "EGc3gxBpk6teIzgELn3yobiuQzodUCyieJnvK8zEj633m76rEz", secret: "TJgV9Um001Akix3x70lcFD1eO3gIQX7aAIBlIMUB"});
 
 // Add the code required to import the `keys.js` file and store it in a variable
-// const keys = require("keys.js");
-// let client = new petfinder.Client(keys.petfinder);
+const keys = require("../keys.js");
+let client = new petfinder.Client(keys.petfinder);
 
 // dependency
 
