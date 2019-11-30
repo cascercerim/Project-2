@@ -1,19 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <title>Furever Match</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/882c228256.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/Users/annemariehin/bootcamp/Project-2/public/css/style.css">
+    <title>Pet App</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="top">
+        <nav class="navbar navbar-light bg-light opacity: 50">
+            <span class="navbar-brand mb-0 h1">Furever Match <i class="fas fa-paw"></i></span>
+        </nav>
+    </div>
 
+    <div class="test" padding-top:40px>
         <form>
-            <h2>Survey</h2>
+            <h2>Find Your Perfect Pet!</h2>
 
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Name:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
+            </div>
+        
             <h6>What type of pet?</h6>
 
             <div id="type-of-pet">
@@ -82,17 +101,17 @@
         <br>
         <form>
             <div id="coat-of-pet">
-                <h6>"What kind of coat?"</h6>
+                <h6>What kind of coat?</h6>
                 <div class="form-check">
                     <label class="form-check-label" for="radio1">
                         <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Coat">
-                        Curly
+                        Curly (For DOGS only)
                     </label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label" for="radio2">
                         <input type="radio" class="form-check-input" id="radio2" name="optradio" value="Coat">
-                        Hairless
+                        Hairless (For CATS dogs)
                     </label>
                 </div>
                 <div class="form-check">
@@ -119,7 +138,7 @@
                 <div class="form-check">
                     <label class="form-check-label" for="radio1">
                         <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Coat">
-                        Wire
+                        Wire (For DOGS only)
                     </label>
                 </div>
             </div>
@@ -128,7 +147,7 @@
         <form>
             <div id="age-of-pet">
 
-                <h6>"Preferred pet age?"</h6>
+                <h6>Preferred pet age?</h6>
                 <div class="form-check">
                     <label class="form-check-label" for="radio1">
                         <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Age">
@@ -157,37 +176,91 @@
                 </div>
             </div>
         </form>
+
+
+        </form>
+
+
+<br>
+<br>
+
+       
+       <button type="submit" class="btn btn-light" id="submit">Submit</button>
     </div>
-    </form>
+    </div>
+    </div>
+
+    <div class="bottom">
+        <nav class="navbar fixed-bottom navbar-dark bg-#234d73 text-white">
+            <div class="navbar-brand mx-auto"><small>Furever Match 2019 | All Rights Reserved</small></div>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <br>
 
 
-
-    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 
     </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <div class="bottom">
+        <nav class="navbar fixed-bottom navbar-dark bg-#234d73 text-white">
+            <div class="navbar-brand mx-auto"><small>Furever Match 2019 | All Rights Reserved</small></div>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <script>
-
-
-        $("#submit").click(function (e) {
-            e.preventDefault();
-            $.post("http://localhost:8080/api/pets",
-                {
-                    type: $("#type-of-pet input").val(),
-                    size: $("#size-of-pet input").val(),
-                    gender: $("#gender-of-pet input").val(),
-                    coat: $("#coat-of-pet").val(),
-                    age: $("#age-of-pet").val(),
-                    // environment: $("#type-of-pet input").val(),
-                }).then(function (response) {
-                    console.log(response);
-                });
-        });
-    </script>
+            $("#submit").click(function (e) {
+                e.preventDefault();
+                console.log($("#type-of-pet input").val());
+                $.post("http://localhost:8080/api/pets",
+                    {
+                        type: $("input[name='type']:checked").val(),
+                        size: $("input[name='size']:checked").val(),
+                        gender: $("input[name='gender']:checked").val(),
+                        coat: $("input[name='coat']:checked").val(),
+                        age: $("input[name='age']:checked").val(),
+                    }).then(function (response) {
+                        console.log(response);
+                    });
+            });
+        </script>
 </body>
 
 </html>
