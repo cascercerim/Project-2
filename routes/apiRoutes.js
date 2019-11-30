@@ -32,12 +32,9 @@ module.exports = function (app) {
                 gender: req.body.gender,
                 coat: req.body.coat,
                 age: req.body.age,
-                description: req.body.description,
-                photos: req.body.photos,
             }
         )
             .then(function (response) {
-                
                 // Post to your database here
                 // res.json(response.data.animals[0].type);
                 // res.json(response.data.animals[0].size);                    it doesn't appear that these are needed but leaving for the time being
