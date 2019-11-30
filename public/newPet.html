@@ -104,24 +104,14 @@
                 <h6>What kind of coat?</h6>
                 <div class="form-check">
                     <label class="form-check-label" for="radio1">
-<<<<<<< HEAD:newPet.html
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Coat">
-                        Curly (For DOGS only)
-=======
                         <input type="radio" class="form-check-input" id="radio1" name="coat" value="Curly">
                         Curly (for DOGS only)
->>>>>>> master:public/newPet.html
                     </label>
                 </div>
                 <div class="form-check">
                     <label class="form-check-label" for="radio2">
-<<<<<<< HEAD:newPet.html
-                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="Coat">
-                        Hairless (For CATS dogs)
-=======
                         <input type="radio" class="form-check-input" id="radio2" name="coat" value="Hairless">
                         Hairless (for CATS only)
->>>>>>> master:public/newPet.html
                     </label>
                 </div>
                 <div class="form-check">
@@ -146,15 +136,9 @@
                 </div>
 
                 <div class="form-check">
-<<<<<<< HEAD:newPet.html
-                    <label class="form-check-label" for="radio1">
-                        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Coat">
-                        Wire (For DOGS only)
-=======
                     <label class="form-check-label" for="radio6">
                         <input type="radio" class="form-check-input" id="radio6" name="coat" value="Wire">
                         Wire (for DOGS only)
->>>>>>> master:public/newPet.html
                     </label>
                 </div>
             </div>
@@ -246,7 +230,6 @@
 
 
 
-<<<<<<< HEAD:newPet.html
 
 
     <!-- Optional JavaScript -->
@@ -277,24 +260,8 @@
                         console.log(response);
                     });
             });
-        </script>
-=======
-        $("#submit").click(function (e) {
-            e.preventDefault();
-            console.log($("#type-of-pet input").val());
-            $.post("http://localhost:8080/api/pets",
-                {
-                    type: $("input[name='type']:checked").val(),
-                    size: $("input[name='size']:checked").val(),
-                    gender: $("input[name='gender']:checked").val(),
-                    coat: $("input[name='coat']:checked").val(),
-                    age: $("input[name='age']:checked").val(),
-                }).then(function (response) {
-                    console.log(response);
-                });
-        });
+ 
     </script>
->>>>>>> master:public/newPet.html
 </body>
 
 </html>
