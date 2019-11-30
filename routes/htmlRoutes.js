@@ -2,9 +2,22 @@
 // html-routes.js - this file offers a set of routes for sending users to the various html pages
 // *********************************************************************************
 
+<<<<<<< HEAD
+module.exports = function (app) {
+    // Load index page
+    app.get("/", function (req, res) {
+        db.Example.findAll({}).then(function (dbExamples) {
+            res.render("index", {
+                msg: "Welcome!",
+                examples: dbExamples
+            });a
+        });
+    });
+=======
 // Dependencies
 // =============================================================
 var path = require("path");
+>>>>>>> master
 
 
 // Routes
