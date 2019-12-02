@@ -23,7 +23,9 @@
      padding-bottom: 20px;
      
  }
+.container{
 
+}
  button{
 opacity: 0.5;
 font-family: 'Calistoga', cursive;
@@ -105,6 +107,24 @@ h6{
     margin-bottom: 10px;
 }
 
-h5{
-    color: grey;
-}
+input[type=text], textarea {
+    width: 100%; 
+    position: static;
+    padding: 8px, 10px, 25px, 10px; 
+    border: 1px solid #c9c9c9; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 8px; 
+    margin-bottom: 8px; 
+    font-size: 12px;
+    top: 100px;
+    opacity: 0.8;
+  }
+  .test{
+      margin-top:100px;
+      padding:25px;
+  }
+  h5{
+      color: grey;
+      font-family:'Calistoga', cursive;
+  }
