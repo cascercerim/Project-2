@@ -32,7 +32,7 @@
                 <label for="exampleFormControlInput1">Name:</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="">
             </div>
-        
+
             <h6>What type of pet?</h6>
 
             <div id="type-of-pet">
@@ -181,15 +181,17 @@
         </form>
 
 
-<br>
-<br>
+        <br>
+        <br>
 
-       
-       <button type="submit" class="btn btn-light" id="submit">Submit</button>
+
+        <button type="submit" class="btn btn-light" id="submit" data-toggle="modal" data-target="#modal-tog">Submit</button>
     </div>
     </div>
     </div>
 
+
+   
     <div class="bottom">
         <nav class="navbar fixed-bottom navbar-dark bg-#234d73 text-white">
             <div class="navbar-brand mx-auto"><small>Furever Match 2019 | All Rights Reserved</small></div>
@@ -200,13 +202,32 @@
     <br>
 
 
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
 
     </div>
+    </div>
+    <div class="modal" id="modal-tog" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"> Your Furever Match </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modal-bod">
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Don't Adopt Me :(</button>
+                    <a href="results.html"><button type="button" class="btn btn-primary">Adopt This Pet!</button></a>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -238,21 +259,27 @@
     <script type="text/javascript" src="js/materialize.min.js"></script> -->
 
     <script>
-            $("#submit").click(function (e) {
-                e.preventDefault();
-                console.log($("#type-of-pet input").val());
-                $.post("http://localhost:8080/api/pets",
-                    {
-                        type: $("input[name='type']:checked").val(),
-                        size: $("input[name='size']:checked").val(),
-                        gender: $("input[name='gender']:checked").val(),
-                        coat: $("input[name='coat']:checked").val(),
-                        age: $("input[name='age']:checked").val(),
-                    }).then(function (response) {
-                        console.log(response);
-                    });
-            });
- 
+        $("#submit").click(function (e) {
+            e.preventDefault();
+            console.log($("#type-of-pet input").val());
+            $.post("http://localhost:8080/api/pets",
+                {
+                    type: $("input[name='type']:checked").val(),
+                    size: $("input[name='size']:checked").val(),
+                    gender: $("input[name='gender']:checked").val(),
+                    coat: $("input[name='coat']:checked").val(),
+                    age: $("input[name='age']:checked").val(),
+                }).then(function (response) {
+                    console.log(response);
+                    var photos = $('<img>').attr('src', response.photos)
+                    var description =$('<h4>').text(response.description)
+                    $('#modal-bod').append(photos);
+                    $('#modal-bod').append(description);
+                    console.log(photos);
+                });
+        });
+
+
     </script>
 </body>
 
