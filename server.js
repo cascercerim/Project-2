@@ -30,6 +30,6 @@ require("./routes/htmlRoutes.js")(app);
 // =============================================================
 db.sequelize.sync().then(function () {
     app.listen(PORT, function () {
-        console.log("App listening on PORT " + PORT);
+        console.log("==> 🌎  Listening on port %s. Visit http://localhost:8080/ in your browser." + PORT);
     });
 });
