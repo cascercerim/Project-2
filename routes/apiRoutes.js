@@ -27,6 +27,7 @@ module.exports = function (app) {
     app.get("/api/pets", function (req,res) {
         db.aminal.findAll({}).then(function(dbpets){
         res.json(dbpets);
+        
     });
 });
     app.post("/api/pets", function (req, res) {
