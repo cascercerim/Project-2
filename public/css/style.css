@@ -10,43 +10,42 @@
         max-width:500px;
         display: block;
         margin:  auto;
-      }
-    
-      body{
-          background: url(../Images/board-carpentry-colors-dried-172280.jpg);
-          background-repeat: no-repeat;
-          background-size: 1600px 1800px;}
-      
- .top{
-     opacity: .5;
-     font-family: 'Calistoga', cursive;
-     padding-bottom: 20px;
-     
- }
+}
+    body{
+    background: url(../Images/board-carpentry-colors-dried-172280.jpg);
+    background-repeat: no-repeat;
+        background-size: 1600px 1800px;}
 
- button{
+.top{
+    opacity: .5;
+    font-family: 'Calistoga', cursive;
+    padding-bottom: 20px;
+    
+}
+
+button{
 opacity: 0.5;
 font-family: 'Calistoga', cursive;
- margin: auto;
- padding-bottom: 40px;
+margin: auto;
+padding-bottom: 40px;
 
- }
+}
 
- .card-columns {
+.card-columns {
 
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 25px;
     padding-bottom: 25px;
- }
+}
 
- h1{
-     text-align: center;
-     font-family: 'Calistoga', cursive;
-     color: whitesmoke;
- }
+h1{
+    text-align: center;
+    font-family: 'Calistoga', cursive;
+    color: whitesmoke;
+}
 
- p{
+p{
     text-align: center;
     font-family: 'Calistoga', cursive;
     color: whitesmoke;
@@ -64,10 +63,10 @@ font-family: 'Calistoga', cursive;
 }
 .test {
     padding-top: 40px;
-     width: 800px;
+    width: 800px;
     margin: auto;
     font-family:'Calistoga', cursive;
-   color: whitesmoke;
+    color: whitesmoke;
     border-style:  solid;
     border-color:  whitesmoke;
 }
