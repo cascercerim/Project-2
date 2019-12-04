@@ -1,26 +1,21 @@
 {
-    "development": {
-      "username": "root",
-      "password": "Kaylam9!",
-      "database": "pets_db",
-      "host": "localhost",
-      "dialect": "mysql"
-    },
-    "test": {
-      "username": "root",
-      "password": "Kaylam9!",
-      "database": "pets_db",
-      "host": "localhost",
-      "dialect": "mysql",
-      "logging": false
-    },
-    "production": {
-      "use_env_variable": "JAWSDB_URL",
-      "dialect": "mysql",
-      "username": "root",
-      "password": "Kaylam9!",
-      "database": "database_production",
-      "operatorsAliases": 0
-    }
+  "development": {
+    "username": "root",
+    "password": "Kaylam9!",
+    "database": "pets_db",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "Kaylam9!",
+    "database": "pets_db",
+    "host": "localhost",
+    "dialect": "mysql",
+    "logging": false
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
   }
-  
+}
